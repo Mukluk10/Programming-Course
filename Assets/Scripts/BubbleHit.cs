@@ -28,8 +28,6 @@ public class BubbleHit : MonoBehaviour
             rb.isKinematic = true;
             gameObject.transform.SetParent(other.transform);
             gameObject.transform.position = other.transform.position;
-            
-
             StartCoroutine(FloatingInBubbleTimer());
         }
     }

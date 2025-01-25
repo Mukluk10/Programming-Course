@@ -6,32 +6,17 @@ public class BubbleScript : MonoBehaviour
 {
     public float timer;
     public bool isFloating;
+    public Collider col;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Object") && !isFloating)
-        {
-            isFloating = true;
-            StartCoroutine(BubbleExplodeTime());
-            Debug.Log("collisoin");
-        }
-        else 
-        {
-            Debug.Log("collisoin");
-            Destroy(gameObject);
-        }
     }
 
     private void OnTriggerEnter(Collider other)

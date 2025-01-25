@@ -88,7 +88,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a1ce1b6de8c014292ebbeb120f69d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
+  moveSpeed: 1000
+  maxSpeed: 50
 --- !u!1001 &7067152765816485036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167,7 +168,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e7ef4a48695403049afaee5b633cc864, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2123097080142872210}
+      addedObject: {fileID: 1857607965429045176}
   m_SourcePrefab: {fileID: 100100000, guid: e7ef4a48695403049afaee5b633cc864, type: 3}
 --- !u!4 &7320927209107247943 stripped
 Transform:
@@ -179,7 +180,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e7ef4a48695403049afaee5b633cc864, type: 3}
   m_PrefabInstance: {fileID: 7067152765816485036}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &2123097080142872210
+--- !u!64 &1857607965429045176
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
