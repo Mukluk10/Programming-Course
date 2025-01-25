@@ -1,16 +1,20 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class BubbleScript : MonoBehaviour
 {
     public float timer;
     public bool isFloating;
+    public float floatSpeed;
+    private Rigidbody rb;
+    public VisualEffect vfx;
+    public MeshRenderer rend;
     public Collider col;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -19,10 +23,19 @@ public class BubbleScript : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        if (isFloating)
+        {
+            rb.AddForce(Vector3.up * floatSpeed * Time.fixedDeltaTime);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!isFloating)
         {
+            col.enabled = false;
             if (other.CompareTag("Object"))
             {
                 isFloating = true;
@@ -32,7 +45,9 @@ public class BubbleScript : MonoBehaviour
             else
             {
                 Debug.Log("Trigger ELse");
-                Destroy(gameObject);
+                rend.enabled = false;
+                vfx.Play();
+                StartCoroutine(PopTime());
             }
         }
         
@@ -41,6 +56,15 @@ public class BubbleScript : MonoBehaviour
     public IEnumerator BubbleExplodeTime()
     {
         yield return new WaitForSeconds(timer);
+        vfx.Play();
+        rend.enabled = false;
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
+    }
+
+    private IEnumerator PopTime()
+    {
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 }

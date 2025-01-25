@@ -1,12 +1,11 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class BubbleHit : MonoBehaviour
 {
     public bool isInBubble;
     public float floatingTime;
-    private Rigidbody rb;
+    public Rigidbody rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +38,7 @@ public class BubbleHit : MonoBehaviour
         gameObject.transform.SetParent(null);
         yield return new WaitForSeconds(0.2f);
         isInBubble = false;
+        rb.constraints = RigidbodyConstraints.None;
     }
 
 }

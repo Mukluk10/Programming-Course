@@ -426,6 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4705801586774710597}
+  - component: {fileID: 232593665485298122}
   m_Layer: 0
   m_Name: npcMan3
   m_TagString: Untagged
@@ -450,6 +451,28 @@ Transform:
   - {fileID: 1945081609855657119}
   m_Father: {fileID: 8346561388485104164}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!95 &232593665485298122
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333824574236476415}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b17c45fa839f0ce4f88ff6d2dfee11bd, type: 3}
+  m_Controller: {fileID: 9100000, guid: 44f5985959f304a489deacde51ac3db0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5496536880357693095
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +948,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &638232869176425052
 MonoBehaviour:
@@ -941,6 +964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInBubble: 0
   floatingTime: 5
+  rb: {fileID: 2504813044609884223}
 --- !u!114 &1070612476534153436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -953,8 +977,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a1ce1b6de8c014292ebbeb120f69d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 320
-  maxSpeed: 20
+  moveSpeed: 400
+  maxSpeed: 10
 --- !u!1 &9110328949775826484
 GameObject:
   m_ObjectHideFlags: 0

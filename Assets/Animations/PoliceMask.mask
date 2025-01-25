@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PoliceMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Pelvis
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Bottom Spine
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Left Shoulder
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Left Shoulder/Left Arm
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Left Shoulder/Left Arm/Left
+      Elbow
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Left Shoulder/Left Arm/Left
+      Elbow/Left Elbow_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Right Shoulder
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Right Shoulder/Right Arm
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Right Shoulder/Right Arm/Right
+      Elbow
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Right Shoulder/Right Arm/Right
+      Elbow/Right Elbow_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Top Spine
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Top Spine/Head
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Bottom Spine/Middle Spine/Top Spine/Head/Head_end
+    m_Weight: 1
+  - m_Path: Armature/Pelvis/Left Hips
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Left Hips/Left Knee
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Left Hips/Left Knee/Left Foot
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Left Hips/Left Knee/Left Foot/Left Foot_end
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Right Hips
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Right Hips/Right Knee
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Right Hips/Right Knee/Right Foot
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/Right Hips/Right Knee/Right Foot/Right Foot_end
+    m_Weight: 0
+  - m_Path: Cylinder
+    m_Weight: 0
