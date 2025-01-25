@@ -6,7 +6,7 @@ public class CarSpawner : MonoBehaviour
     public Transform[] spawnPoints;
     public float spawnTime;
     public float spawnSpeed;
-    public GameObject vehicle;
+    public GameObject[] vehicle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,14 +26,9 @@ public class CarSpawner : MonoBehaviour
         Transform spawnPoint = spawnPoints[randomSpawnIndex];
 
         // Instantiate the object at the chosen spawn point
-        Instantiate(vehicle, spawnPoint.position, spawnPoint.rotation);
-
-        Rigidbody rb = vehicle.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            // Apply velocity in the forward direction of the spawn point
-            rb.linearVelocity = spawnPoint.forward * spawnSpeed;
-        }
+        int randomObjectIndex = Random.Range(0, vehicle.Length);
+        GameObject spawnObject = vehicle[randomObjectIndex];
+        GameObject spawnedObject = Instantiate(spawnObject, spawnPoint.position, spawnPoint.rotation);
         StartCoroutine(CarSpawnDelay());
     }
 }
