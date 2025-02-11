@@ -8,14 +8,14 @@ namespace AG3961
         [SerializeField] private float time;
         [SerializeField] private bool goinUp;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private void Start()
         {
             goinUp = false;
             StartCoroutine(SwitchDirection());
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (goinUp)
             {

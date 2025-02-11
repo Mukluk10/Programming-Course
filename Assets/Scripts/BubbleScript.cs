@@ -7,7 +7,7 @@ public class BubbleScript : MonoBehaviour
     public float timer;
     public bool isFloating;
     public float floatSpeed;
-    private Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
     public VisualEffect vfx;
     public MeshRenderer rend;
     public Collider col;
