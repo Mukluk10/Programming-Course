@@ -4,7 +4,7 @@ namespace AG3961
 {
     public class TestScript : MonoBehaviour
     {
-        [SerializeField] private float speed;
+        public float speed;
         [SerializeField] private float time;
         [SerializeField] private bool goinUp;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
