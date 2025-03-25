@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bubble
   - Object
+  - Enemy
   layers:
   - Default
   - TransparentFX
