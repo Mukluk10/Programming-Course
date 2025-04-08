@@ -1,10 +1,15 @@
 using UnityEngine;
 
-public interface IDamageable
+
+namespace AG3961
 {
-    public void TakeDamage(int amount)
+    public interface IDamageable
     {
+        public void TakeDamage(int amount)
+        {
+
+        }
 
     }
-
 }
+
